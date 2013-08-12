@@ -38,10 +38,24 @@ public class BowlingGameTest extends TestCase
     
     public void testOneSpare() throws Exception
     {
-        g.roll(5);
-        g.roll(5);
+        rollSpare();
         g.roll(3);
         rollMany(17, 0);
         assertEquals(16, g.score());
+    }
+    
+    public void testOneStrike() throws Exception
+    {
+        g.roll(10);
+        g.roll(3);
+        g.roll(4);
+        rollMany(16, 0);
+        assertEquals(24, g.score());
+    }
+    
+    private void rollSpare()
+    {
+        g.roll(5);
+        g.roll(5);
     }
 }
