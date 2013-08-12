@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ setUp()
+comment1.params=n\ pins
+comment1.target=void\ rollMany(int,\ int)
+comment2.params=
+comment2.target=void\ testGutterGame()
+comment3.params=
+comment3.target=void\ testAllOnes()
+comment4.params=
+comment4.target=void\ testOneSpare()
+numComments=5
