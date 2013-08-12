@@ -18,8 +18,16 @@ public class Game
         int x = 0;
         for (int frame = 0; frame< 10; frame++)
         {
-            score += rolls[x] + rolls [x+1];
-            x += 2;
+            if (rolls[x] + rolls[x+1] == 10) //its a spare
+            {
+                score += 10 + rolls[x +2];
+                x +=2;
+            }
+            else
+            {
+                score += rolls[x] + rolls [x+1];
+                x += 2;
+            }
         }
         return score;
     }
